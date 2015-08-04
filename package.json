@@ -1,0 +1,14 @@
+{
+  "name": "Sedona",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-include-replace": "^3.0.0",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
