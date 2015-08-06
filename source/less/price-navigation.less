@@ -1,0 +1,40 @@
+@import (reference) "df-market54.less";
+
+nav{ 
+    
+    display: block;
+    background: #2f1542;
+    text-align: center;
+
+    ul{
+       .zero();	
+
+
+	   li{
+	   	
+	   	   height: 50px; 
+       
+		  a{
+		  	text-decoration: none;
+		  	text-transform: uppercase;
+		  	.font-style(@font; 
+		  		        @f-size: 28px; 
+		  		        @f-height: 28px; 
+		  		        @f-weight; 
+		  		        @f-color: #745ebb;);
+           
+               &:hover{
+            	color: #c9b1d7;
+            }
+		  }
+
+		  .active{
+		  	color:grey;
+		  	&:hover{
+            	color:grey;
+            }
+		  }
+	   }
+    }
+
+}

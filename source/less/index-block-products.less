@@ -1,0 +1,71 @@
+@import (reference) "df-market54.less";
+
+.row-products{
+	h2{
+		.font-style(@font; 
+    		        @f-size: 48px; 
+    		        @f-height: 30px; 
+    		        @f-weight: bold; 
+    		        @f-color: #b63a80;);
+	}
+
+	figure{
+		h3{
+			text-transform: uppercase;
+			.font-style(@font; 
+    		        @f-size: 26px; 
+    		        @f-height: 36px; 
+    		        @f-weight: bold; 
+    		        @f-color: #640aa9;);
+
+		}
+        p{
+        	.font-style(@font; 
+    		        @f-size: 20px; 
+    		        @f-height: 20px; 
+    		        @f-weight: normal; 
+    		        @f-color: #640aa9;);
+        }
+	}
+.index-alcohol>.pict{
+	
+		background: url('../img/alcohol.png') no-repeat center;
+	
+}
+
+.index-parfum>.pict{
+    
+        background: url('../img/parfum.png') no-repeat center;
+    
+}
+
+.index-other>.pict{
+    
+        background: url('../img/other.png') no-repeat bottom;
+    
+}
+
+.btn-price{
+    .link_to_btn( @pad_top_btn: 6px;
+             @radius_btn; 
+             @color_btn; 
+             @up_clr_btn;
+             @dwn_clr_btn; 
+             @text_clr; 
+             @width_btn; 
+             @mode;
+             @font; 
+             @f-size: 20px;
+             @f-height; 
+             @f-weight;);
+    &:hover{
+         background: linear-gradient(to bottom, #a293d2, #1e0f4f);
+         color:white;
+    }
+    &:focus{
+         background: linear-gradient(to bottom, #8e77af, #8e77af);
+         color:white;
+    }
+}
+
+}

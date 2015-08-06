@@ -1,0 +1,157 @@
+@import (reference) "df-market54.less";
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+
+.modal-error {
+  display: block;	
+  animation: shake 0.6s;
+}
+
+
+
+.modal-menu-show{
+	display: block;
+	animation: bounce 0.6s;
+}
+
+
+
+.modal-menu{
+   
+	width: 400px;
+	height: 440px;
+	background: #e3d7ea;
+	box-shadow: 0 7px 21px rgba(0,0,0,0.82);
+
+	.close{
+		
+		position: absolute;
+		border-radius: 100%;
+		background: #c9b1d7;
+		width: 50px;
+		height: 50px;
+        left:420px;
+        top:-30px;
+        cursor: pointer;
+        svg{
+        	margin-left: 14px;
+        	margin-top: 13px;
+        	fill:#2f1542;
+        }
+	}
+	.title{
+		.zero();
+		height: 115px;
+		background: #2f1542;
+		p{
+			
+			.zero();
+			padding: 15px 20px;
+			text-align: center;
+			.font-style(@font; 
+				        @f-size: 28px; 
+				        @f-height: 28px; 
+				        @f-weight:normal; 
+				        @f-color:#b63a80;)
+		}
+
+	}
+
+	form{
+		text-align: center;
+		p{
+			.zero();
+			.font-style(@font; 
+				        @f-size: 28px; 
+				        @f-height: 30px; 
+				        @f-weight:normal; 
+				        @f-color:#7b37b1;)
+		}
+		input[type="text"],
+		input[type="tel"]{
+			height: 40px;
+			width: 250px;
+			background: #c0a0d7;
+			outline: none;
+			border:none;
+			.font-style(@font; 
+				        @f-size: 28px; 
+				        @f-height: 30px; 
+				        @f-weight:normal; 
+				        @f-color:#7b37b1;)
+
+		}
+
+        input[type="text"]:focus,
+		input[type="tel"]:focus{  
+		    outline: 2px solid blue;
+        }
+
+		input[type="text"]::-webkit-input-placeholder,
+		input[type="tel"]::-webkit-input-placeholder{
+			color:#a072c5;
+		}
+
+		input[type="text"]:-moz-placeholder,
+		input[type="tel"]:-moz-placeholder{
+			color:#a072c5;
+		}
+
+		input[type="submit"]{
+			.link_to_btn(@pad_top_btn: 0;
+             @radius_btn; 
+             @color_btn; 
+             @up_clr_btn;
+             @dwn_clr_btn; 
+             @text_clr; 
+             @width_btn: 170px; 
+             @mode;
+             @font; 
+             @f-size: 20px;
+             @f-height: 14px; 
+             @f-weight;);
+			outline:none;
+			border:none;
+			box-shadow: none;
+			margin: 40px auto;
+
+			&:hover{
+		        
+		        background: linear-gradient(to bottom, #a293d2, #1e0f4f);
+		        color:white;
+		        }
+		        &:focus{
+		      
+		        background: linear-gradient(to bottom, #8e77af, #8e77af);
+		        color:white;
+		        }      
+		}
+	}
+}
