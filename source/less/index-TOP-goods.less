@@ -1,0 +1,92 @@
+@import (reference) "df-market54.less";
+
+.index-top-goods{
+	padding-top: 20px;
+	h2{
+		.font-style(@font; 
+			        @f-size: 24px; 
+			        @f-height: 30px; 
+			        @f-weight: bold; 
+			        @f-color: #663322;);
+		text-align: center;
+		margin-bottom: 0;
+	}
+	figure{
+		outline: 1px solid black;
+		text-align: center;
+		.column-pad(@column: 4; 
+			        @w_pad: 20);
+		height: 350px;
+		padding-top: 30px;
+	
+		.item-pict{
+			//outline:1px solid black;
+			width: 250px;
+			height: 150px;
+			margin: 0 auto;
+			&:hover{
+           	outline:1px solid black;
+           }
+
+		}
+
+
+        
+        p{
+        	.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 30px; 
+			        @f-weight: bold; 
+			        @f-color: #663322;);
+		text-align: center;
+        }
+
+        .item-price{
+        	p{
+        		.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 30px; 
+			        @f-weight: bold; 
+			        @f-color: #ff7700;);
+		text-align: center;
+        	}
+        }
+
+        .btn-to-basket{
+
+        	.link_to_btn(@pad_top_btn:7px;
+             @radius_btn: 3px; 
+             @color_btn; 
+             @up_clr_btn: #cc937c;
+             @dwn_clr_btn: #984c2f; 
+             @text_clr: white; 
+             @width_btn: 150px;
+             @height_btn: 30px; 
+             @mode;
+             @font; 
+             @f-size: 14px;
+             @f-height: 12px; 
+             @f-weight;);
+	 	box-shadow: 3px 3px 4px 2px rgba(0,0,0,0.3);
+	 	&:hover{
+	 		.link_to_btn(@pad_top_btn:7px;
+             @radius_btn: 3px; 
+             @color_btn; 
+             @up_clr_btn: #f1d3c6;
+             @dwn_clr_btn: #5c240f; 
+             @text_clr: white; 
+             @width_btn: 150px;
+             @height_btn: 30px; 
+             @mode;
+             @font; 
+             @f-size: 14px;
+             @f-height: 12px; 
+             @f-weight;);
+	 	}
+        margin: 0 auto; 
+        }
+
+
+
+	}
+}

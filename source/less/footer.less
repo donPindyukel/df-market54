@@ -1,0 +1,93 @@
+@import (reference) "df-market54.less";
+
+footer{
+	margin-top: 50px;
+	height: 155px;
+	background: #e4cb9a;
+	min-width: 1000px;
+
+	
+// Меню
+	.menu{
+		.zero-ul(@name_ul);
+		li{
+			display:inline-block;
+
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 12px; 
+			        @f-weight; 
+			        @f-color: #524637;);
+				padding:0 30px;
+			    &:hover{
+			    	color:white;
+
+			    }
+			}
+
+			.active{
+				background-color:#b66b53;
+				color:white; 
+			}
+		}
+	}
+//Телефоны
+	.header-phone{
+		text-align: center;
+		p{
+		.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 30px; 
+			        @f-weight: bold; 
+			        @f-color: #524637;);
+		margin-bottom: 10px;
+	    }
+//кнопка
+	 .btn-call{
+	 	.link_to_btn(@pad_top_btn:7px;
+             @radius_btn: 3px; 
+             @color_btn; 
+             @up_clr_btn: #cc937c;
+             @dwn_clr_btn: #984c2f; 
+             @text_clr: white; 
+             @width_btn: 150px;
+             @height_btn: 30px; 
+             @mode;
+             @font; 
+             @f-size: 14px;
+             @f-height: 12px; 
+             @f-weight;);
+	 	box-shadow: 3px 3px 4px 2px rgba(0,0,0,0.3);
+	 	&:hover{
+	 		.link_to_btn(@pad_top_btn:7px;
+             @radius_btn: 3px; 
+             @color_btn; 
+             @up_clr_btn: #f1d3c6;
+             @dwn_clr_btn: #5c240f; 
+             @text_clr: white; 
+             @width_btn: 150px;
+             @height_btn: 30px; 
+             @mode;
+             @font; 
+             @f-size: 14px;
+             @f-height: 12px; 
+             @f-weight;);
+	 	}
+	 }
+	
+	}
+
+	//Коприрайт		
+	.footer-copyright{
+		.font-style(@font; 
+			        @f-size: 14px; 
+			        @f-height: 12px; 
+			        @f-weight; 
+			        @f-color: #524637;);
+	}
+
+
+}

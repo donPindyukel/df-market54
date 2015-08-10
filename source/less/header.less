@@ -1,0 +1,122 @@
+@import (reference) "df-market54.less";
+
+header{
+	background-color: #e4cb9a;
+	width: 100%;
+	height: 150px;
+
+// Описание сайта
+	.header-discript{
+		.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 18px; 
+			        @f-weight; 
+			        @f-color: #524637;);
+	}
+// Корзина
+	.header-basket{   
+		.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 18px; 
+			        @f-weight; 
+			        @f-color: white;);
+		text-decoration: none;
+	}
+// блок с телефонами
+	.header-phone{
+		text-align: center;
+		p{
+		.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 30px; 
+			        @f-weight: bold; 
+			        @f-color: #524637;);
+		margin-bottom: 10px;
+	    }
+
+	 .btn-call{
+	 	.link_to_btn(@pad_top_btn:7px;
+             @radius_btn: 3px; 
+             @color_btn; 
+             @up_clr_btn: #cc937c;
+             @dwn_clr_btn: #984c2f; 
+             @text_clr: white; 
+             @width_btn: 150px;
+             @height_btn: 30px; 
+             @mode;
+             @font; 
+             @f-size: 14px;
+             @f-height: 12px; 
+             @f-weight;);
+	 	box-shadow: 3px 3px 4px 2px rgba(0,0,0,0.3);
+	 	&:hover{
+	 		.link_to_btn(@pad_top_btn:7px;
+             @radius_btn: 3px; 
+             @color_btn; 
+             @up_clr_btn: #f1d3c6;
+             @dwn_clr_btn: #5c240f; 
+             @text_clr: white; 
+             @width_btn: 150px;
+             @height_btn: 30px; 
+             @mode;
+             @font; 
+             @f-size: 14px;
+             @f-height: 12px; 
+             @f-weight;);
+	 	}
+	 }
+	}
+//Меню
+	.menu{
+		.zero-ul(@name_ul);
+		li{
+			display:inline-block;
+
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 12px; 
+			        @f-weight; 
+			        @f-color: #524637;);
+				padding:0 30px;
+			    &:hover{
+			    	color:white;
+
+			    }
+			}
+
+			.active{
+				background-color:#b66b53;
+				color:white; 
+			}
+		}
+	}
+
+	//Поиск
+	.header-search{
+		input[type="text"]{
+			width: 300px;
+			height: 25px;
+			outline: none;
+			border:none;
+		}
+
+		input[type="submit"]{
+			height: 25px;
+			width: 50px;
+			background: #d6d6d6 url('../img/mg-glass.png') no-repeat center;
+			outline: none;
+			border:none;
+			cursor: pointer;
+			border-radius: 10px;
+			position: absolute;
+			bottom:0;
+			left:250px;
+		}
+	}
+}
+
+
+

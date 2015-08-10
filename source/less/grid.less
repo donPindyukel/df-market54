@@ -1,0 +1,145 @@
+@import (reference) "df-market54.less";
+
+.content-wraper{
+	width:@content-width;
+	margin: 0 auto;
+	//outline: 1px solid green;
+}
+
+//===========HEADER===================
+header{
+   min-width: 1000px;  
+	.header-wrap{ 
+   .zero();
+   position: relative;
+   height: 150px;
+
+   .logo{
+   	  position: absolute;
+   	  top:10px;
+   }
+
+   .header-discript{
+   	  position: absolute;
+   	  left:235px;
+   }
+
+   .header-search{
+   	   position: absolute;
+   	   top:70px;
+   	   left:210px;
+   }
+
+   .header-basket{   
+   	   position: absolute;
+   	   top:75px;
+   	   left:600px;
+   }
+
+   .header-phone{
+   	   position: absolute;
+   	   left:850px;
+   }
+   
+   .menu{
+   	   position: absolute;
+   	   top:124px;
+   	   left:56px;
+   }
+   
+}
+}
+//===========index-Content-BLOCK=============
+
+.df-content{
+	
+	.index-content-picture{
+	
+		display: inline-block;
+
+	}
+
+    .index-content-text{
+
+    	display: inline-block;
+
+    }
+}
+
+//===========index-Category-BLOCK===============
+.index-category{
+	a{
+		display: inline-block;
+		vertical-align: bottom;
+	}
+}
+
+//=========index-TOP-goods================
+.index-top-goods{
+
+	figure{
+		.zero();
+		display: inline-block;
+		
+
+		&:nth-child(3),
+		&:nth-child(6){
+		margin:0 10px
+	    }
+
+	    margin-top: 20px;
+	}
+
+	
+}
+//============FOOOTER=================
+footer{
+
+    .footer-wrap{
+	position: relative;
+	
+    	.logo{
+		position: absolute;
+		top:20px;
+	}
+
+	.menu{
+		position: absolute;
+		left:172px;
+		top:0;
+	}
+
+	.header-phone{
+
+		p{
+			position: absolute;
+		    &:nth-child(1){
+                
+		    	top:50px;
+		        left:300px;
+		}
+		&:nth-child(2){
+                
+		    	top:50px;
+		        left:450px;
+		}
+		}
+
+		.btn-call{
+			position: absolute;
+		    top:70px;
+		        left:600px;
+
+		}
+
+	}
+
+	.footer-copyright{
+		position: absolute;
+		left:822px;
+		top:115px;
+
+	}
+
+  }  
+}

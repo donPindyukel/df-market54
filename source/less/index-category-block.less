@@ -1,0 +1,48 @@
+@import (reference) "df-market54.less";
+
+.index-category{
+			margin-top: 40px;
+	h2{
+		.font-style(@font; 
+			        @f-size: 24px; 
+			        @f-height: 30px; 
+			        @f-weight: bold; 
+			        @f-color: #663322;);
+		text-align: center;
+
+	}
+
+	a{ 
+	  text-decoration: none; 
+	  figure{
+		.zero();
+		.column-pad(@column: 4; 
+			        @w_pad: 20;);
+        text-align: center;
+       
+        
+		h3{
+			.font-style(@font; 
+			        @f-size: 24px; 
+			        @f-height: 30px; 
+			        @f-weight: bold; 
+			        @f-color: #663322;);
+		    text-align: center;
+		}
+
+		p{
+			.font-style(@font; 
+			        @f-size: 18px; 
+			        @f-height: 18px; 
+			        @f-weight: normal; 
+			        @f-color: #663322;);
+		    text-align: center;
+		}
+	  }
+	  &:hover{
+	  	outline: 1px solid black;
+	  }
+	}  
+}
+
+
